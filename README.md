@@ -45,8 +45,8 @@ The recipe flow uses a ViewModel and repository. Network requests run through Ko
 
 ## Current scope
 
-- Inventory is held in memory and resets when the app process restarts.
-- This version uses manual ingredient entry; QR and barcode scanning are not implemented in the supplied source.
+- Inventory is stored locally in Room and persists across app restarts.
+- Add ingredients manually or look up EAN/UPC product barcodes using the camera, an image, or manual code entry. QR codes are not supported.
 - Shelf-life estimates use predefined rules, not a trained model or a food-safety assessment.
 - Recipe search and images require an internet connection. Ingredient matching uses text containment and may produce imperfect matches.
 - The app opens shopping searches; it does not place orders or modify a shopping cart.
