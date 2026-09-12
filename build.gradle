@@ -1,0 +1,16 @@
+// Top-level build file
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+    id 'com.google.devtools.ksp' version '1.9.22-1.0.17' apply false
+}
+
+// This project folder lives inside OneDrive, whose background sync intermittently
+// locks files under app/build and breaks the resource-merge / dex steps
+// (AccessDeniedException). Redirect all build output to a non-synced temp folder
+// so builds from both Android Studio and the command line are reliable.
+allprojects {
+    layout.buildDirectory.set(
+        new File(System.getProperty('java.io.tmpdir'), "fridgo-build/${project.name}")
+    )
+}
