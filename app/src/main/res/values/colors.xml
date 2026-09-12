@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm sage/teal primary instead of harsh green -->
+    <color name="primary">#2F8F83</color>
+    <color name="primary_dark">#1F6B61</color>
+    <color name="primary_light">#E3F2EF</color>
+    <color name="accent">#F2994A</color>
+    <color name="accent_dark">#D97E2B</color>
+
+    <color name="bg">#F6F7F5</color>
+    <color name="card">#FFFFFF</color>
+    <color name="surface_tint">#FBFCFB</color>
+
+    <color name="text_primary">#1C2B29</color>
+    <color name="text_secondary">#5E6E6B</color>
+    <color name="text_hint">#9AA6A3</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- freshness states, slightly desaturated for a softer look -->
+    <color name="fresh">#3DA88F</color>
+    <color name="soon">#E8A23D</color>
+    <color name="urgent">#E0625A</color>
+    <color name="divider">#E8ECEA</color>
+</resources>
